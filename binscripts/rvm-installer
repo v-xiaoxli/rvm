@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BASH_MIN_VERSION="3.2.25"
+BASH_MIN_VERSION="3.1.0"
 if
   [[ -n "${BASH_VERSION:-}" &&
     "$(printf "%b" "${BASH_VERSION:-}\n${BASH_MIN_VERSION}\n" | LC_ALL=C sort -n -t"." | head -n1)" != "${BASH_MIN_VERSION}"
